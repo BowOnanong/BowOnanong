@@ -1,0 +1,99 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Damo</title>
+</head>
+<body>
+    <h3>Login From</h3>   
+    <form method="get" novalidate>
+        <label>Email</label><br>
+        <input type="text" name="email" required><br>
+        <label>Password</label><br>
+        <input type="password" name="password" required><br><br>
+        <input type="submit" value="Login">
+    </form>
+    <input type="button" value="Clik Me" onclick="alert('อย่ามาจับฉัน')">
+</body>
+</html>-->
+
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แบบสอบถาม</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 10px;
+            background-color: #f4f4f4;
+        }
+        form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>แบบสอบถามความคิดเห็น</h1>
+    <form action="your_backend_processing_script.php" method="post">
+        <label for="name">ชื่อของคุณ:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">อีเมลของคุณ:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="feedback">ความคิดเห็นของคุณ:</label>
+        <textarea id="feedback" name="feedback" rows="4" required></textarea>
+
+        <label>เพศ:</label>
+        <input type="radio" id="male" name="gender" value="ชาย">
+        <label for="male">ชาย</label>
+        <input type="radio" id="female" name="gender" value="หญิง">
+        <label for="female">หญิง</label>
+
+        <label for="age">อายุของคุณ:</label>
+        <select id="age" name="age">
+            <option value="under18">ต่ำกว่า 18 ปี</option>
+            <option value="18-24">18 - 24 ปี</option>
+            <option value="25-34">25 - 34 ปี</option>
+            <option value="35-44">35 - 44 ปี</option>
+            <option value="45-60">45 - 60 ปี</option>
+            <option value="60plus">มากกว่า 60 ปี</option>
+        </select>
+
+        <label for="newsletter">สมัครรับข่าวสาร:</label>
+        <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+
+        <button type="submit">ส่งคำตอบ</button>
+    </form>
+</body>
+</html>
